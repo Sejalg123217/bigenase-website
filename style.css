@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #333;
+  transition: background 0.5s, color 0.5s;
+}
+
+body.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0077b6;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url(img.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero h1 span {
+  color: #00b4d8;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #00b4d8;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Services */
+#services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  color: black;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Portfolio */
+#portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.portfolio-card {
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-card img {
+  width: 100%;
+}
+
+/* Contact */
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
